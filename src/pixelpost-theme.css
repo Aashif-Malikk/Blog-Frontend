@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+:root {
+  --pp-purple: #7c4dff;
+  --pp-purple-dark: #5e35b1;
+  --pp-ink: #0f172a;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: var(--pp-ink);
+  background-color: #fff;
+}
+
+.btn-pp {
+  background-color: var(--pp-purple);
+  border-color: var(--pp-purple);
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.btn-pp:hover,
+.btn-pp:focus {
+  background-color: var(--pp-purple-dark);
+  border-color: var(--pp-purple-dark);
+  color: #fff;
+  transform: scale(1.03);
+  box-shadow: 0 0.5rem 1.25rem rgba(124, 77, 255, 0.35);
+}
+
+.btn-outline-pp {
+  color: var(--pp-purple);
+  border-color: var(--pp-purple);
+  background-color: transparent;
+  transition: transform 0.3s ease, color 0.25s ease, background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.btn-outline-pp:hover,
+.btn-outline-pp:focus {
+  color: #fff;
+  background-color: var(--pp-purple);
+  border-color: var(--pp-purple);
+  transform: scale(1.03);
+}
+
+.nav-link.pp-link {
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.nav-link.pp-link:hover,
+.nav-link.pp-link.active {
+  color: var(--pp-purple) !important;
+}
+
+.nav-link.pp-link.active::after {
+  content: '';
+  position: absolute;
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: 0.35rem;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--pp-purple);
+}
+
+@media (min-width: 992px) {
+  .nav-link.pp-link.active::after {
+    left: 0;
+    right: 0;
+  }
+}
+
+.hero-wrap {
+  min-height: 78vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 1.75rem 1.75rem;
+}
+
+.hero-overlay {
+  background: linear-gradient(105deg,
+      rgba(15, 23, 42, 0.92) 0%,
+      rgba(15, 23, 42, 0.55) 48%,
+      rgba(15, 23, 42, 0.35) 100%);
+  border-radius: inherit;
+}
+
+.glass-row {
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(15, 23, 42, 0.12) !important;
+}
+
+.category-zoom {
+  overflow: hidden;
+  border-radius: 1.25rem;
+}
+
+.category-zoom .category-bg {
+  transition: transform 0.45s ease;
+}
+
+.category-zoom:hover .category-bg {
+  transform: scale(1.06);
+}
+
+.pp-link-muted {
+  color: var(--pp-purple);
+  transition: opacity 0.2s ease;
+}
+
+.pp-link-muted:hover {
+  opacity: 0.85;
+}
+
+/* Sell / upload page */
+.sell-page {
+  background-color: #f4f6f9;
+}
+
+.sell-upload-zone {
+  min-height: 240px;
+  border: 2px dashed #dee2e6 !important;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.sell-upload-zone:hover,
+.sell-upload-zone:focus-within {
+  border-color: var(--pp-purple) !important;
+  background-color: rgba(124, 77, 255, 0.04);
+}
+
+.sell-ai-panel {
+  background-color: rgba(124, 77, 255, 0.08);
+  border: 1px solid rgba(124, 77, 255, 0.22);
+}
+
+.sell-card {
+  border: 1px solid #eee;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.sell-step-line {
+  width: 2px;
+  flex: 1;
+  min-height: 1.25rem;
+  background: rgba(15, 23, 42, 0.12);
+}
+
+.sell-step-active {
+  background-color: var(--pp-purple);
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+}
+
+.sell-step-idle {
+  background-color: #e9ecef;
+  color: #6c757d;
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Image gallery cards — natural image ratio + hover details on card-body */
+.image-card-media {
+  position: relative;
+  background-color: #f1f5f9;
+}
+
+.image-card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+}
+
+.image-card-body {
+  min-height: 5.5rem;
+  background-color: rgba(255, 255, 255, 0.442);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: background-color 0.35s ease, box-shadow 0.35s ease;
+  transform: translateY(130px);
+}
+
+
+
+.image-card-media:hover .image-card-body {
+  transform: translateY(0px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .image-card-media,
+  .image-card-details {
+    transition: none;
+  }
+
+  .image-card-details {
+    opacity: 1;
+    transform: none;
+  }
+}
