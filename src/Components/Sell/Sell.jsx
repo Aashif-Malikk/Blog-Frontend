@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const API_BASE = 'https://blog-project-d6fu.onrender.com'
+// const API_BASE = 'http://localhost:4000'
+
 
 
 const TIPS = [

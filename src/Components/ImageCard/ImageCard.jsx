@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { resolveImageUrl } from '../../utils/imageUrl'
 
 const API_BASE = 'https://blog-project-d6fu.onrender.com'
+// const API_BASE = 'http://localhost:4000'
 
 export function ImageCard({ title, description, price, imgSrc }) {
   const imageUrl = resolveImageUrl(imgSrc)

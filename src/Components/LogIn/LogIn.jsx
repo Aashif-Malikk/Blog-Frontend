@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import './LogIn.css'
 import { useNavigate } from 'react-router-dom'
 const API_BASE = 'https://blog-project-d6fu.onrender.com'
+// const API_BASE = 'http://localhost:4000'
+
 
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=1600&q=80'

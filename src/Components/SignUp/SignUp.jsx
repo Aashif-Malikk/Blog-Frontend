@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './SignUp.css'
 const API_BASE = 'https://blog-project-d6fu.onrender.com'
+// const API_BASE = 'http://localhost:4000'
+
 
 const MASONRY_IMAGES = [
   'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=400&q=70',
