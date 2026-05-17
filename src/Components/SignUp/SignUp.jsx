@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './SignUp.css'
-const API_BASE = (import.meta.env.VITE_API_URL ?? '').replace(/\/$/, '')
+const API_BASE = 'https://blog-project-d6fu.onrender.com'
 
 const MASONRY_IMAGES = [
   'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=400&q=70',

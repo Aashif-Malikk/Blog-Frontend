@@ -5,5 +5,5 @@ export default function Auth() {
     // ✅ localStorage is always readable, no cookie issues
     let isLoggedIn = localStorage.getItem("isLoggedIn")
 
-    return isLoggedIn ? <Outlet /> : <Navigate to="/auth/login" />
+    return isLoggedIn ? <Outlet /> : <Navigate to="/auth/signup" />
 }

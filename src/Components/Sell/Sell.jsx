@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const API_BASE = (import.meta.env.VITE_API_URL ?? '').replace(/\/$/, '')
+const API_BASE = 'https://blog-project-d6fu.onrender.com'
 
 
 const TIPS = [

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { resolveImageUrl } from '../../utils/imageUrl'
 
-const API_BASE = (import.meta.env.VITE_API_URL ?? '').replace(/\/$/, '')
+const API_BASE = 'https://blog-project-d6fu.onrender.com'
 
 export function ImageCard({ title, description, price, imgSrc }) {
   const imageUrl = resolveImageUrl(imgSrc)
