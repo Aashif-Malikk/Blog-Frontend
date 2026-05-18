@@ -92,7 +92,7 @@ export default function RecentlyAddedPhotos() {
       <div className="row g-4">
         {Array.isArray(imgData) &&
           imgData.map((p) => (
-            <div key={p._id} className="col-6 col-sm-6 col-lg-3">
+            <div key={p._id} className="col-6 col-sm-6 col-lg-3 h-auto">
               <ImageCard
                 title={p.title}
                 description={p.description}
